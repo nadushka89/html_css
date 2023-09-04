@@ -1,0 +1,52 @@
+*{
+    font-family: Gilroy-Bold;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+.top{
+    padding-bottom: 96px;
+}
+
+.header{
+    padding-top: 51px;
+    padding-bottom: 96px;
+}
+
+.title{
+    color: #000;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 17px;
+}
+.text{
+    color: #888;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 37px;
+}
+
+
+.button{
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+}
+
+.button_watch{
+    color: #AAA;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.logo{
+    margin-top: 162.45px;
+}
