@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.top{
+    background: #FFF;
+}
+.header{
+    display: grid;
+    grid-template-columns: repeat(3,370px);
+    gap: 59px;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.item__header{
+    display: grid;
+    justify-content: center;
+    justify-items: start;
+    padding: 40px 31px 25px 30px;
+}
+.item__header_border{
+    background: #FFF;
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+.item__header__img{
+    padding-bottom: 25px;
+}
+.heading_item{
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 17px;
+}
+.heading_text_item{
+    color: #666;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 22.5px */
+    padding-bottom: 25px;
+}
+.heading_link{
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 16.5px */
+    text-decoration: none;
+}
+.content{
+    background: #FAFAFA;
+}
+.content_item{
+    display: grid;
+    grid-template-columns: repeat(3,370px);
+    gap: 30px;
+    justify-content: center;
+    padding-top: 55px;
+    padding-bottom: 100px;
+}
+.item_block{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    background: #FFF;
+}
+
+.content_title{
+    text-align: center;
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 92px;
+    padding-bottom: 19px;
+}
+.text_content{
+    color: #666;
+    text-align: center;
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    padding-bottom: 55px;
+}
+
+.title_item{
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 22px;
+}
+
+.text_item{
+    color: #AAA;
+    text-align: center;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 22.5px */
+    padding: 0px 30px 39px;
+    
+}
+
+.button{
+    color: #FFF;
+    text-align: center;
+    font-family: Gilroy-Bold;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 19.5px */
+    display: flex;
+    padding: 15px 36px 15px 46px;
+    background:  #F25822;
+    border-radius: 50px;
+    
+}
