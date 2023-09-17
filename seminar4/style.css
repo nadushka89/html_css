@@ -12,7 +12,8 @@ a{
     color:  #FFF;
 }
 .container{
-    width: 1146px;
+    max-width: 1146px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -64,7 +65,7 @@ a{
 .main-link{
     padding: 1rem 2rem;
     background-color: #3A68B8;
-    columns: #fff;
+    color: #fff;
     border-radius: 5px;
     font-family: Open Sans;
     font-size: 20px;
@@ -75,7 +76,15 @@ a{
 .flex{
     display: flex;
     justify-content: space-between;
+}
+.main_menu{
+    display: flex;
+    justify-content: space-between;
 
+}
+.logo_menu{
+    display: flex;
+    justify-content: space-between;
 }
 .main-left, .main-right{
     width: 44%;
@@ -83,8 +92,15 @@ a{
 .main{
     margin-bottom: 200px;
 }
-.product-logo{
+.logos{
     margin-bottom: 256px;
+}
+.img-flex img{
+    width: 100%;
+}
+.menu_deep{
+    display: flex;
+    justify-content: space-between;
 }
 .title__deep__learning {
     padding-top: 110px;
@@ -122,7 +138,6 @@ a{
 .deep__learning{
     margin-bottom: 264px;
 }
-
 
 .title_feature{
     color:  #FFF;
@@ -165,6 +180,7 @@ a{
 }
 .img__feature{
     padding:30px 132px 30px;
+    /* padding:8.3% 36.4% 8.3%; */
 }
 
 .top__feature {
@@ -179,6 +195,7 @@ a{
 
 .img__feature1{
     padding: 30px 224px 60px;
+    /* padding:4% 29.7% 8%; */
 }
 .title_feature2{
     color:  #FFF;
@@ -208,7 +225,10 @@ a{
 .feature{
     margin-bottom: 243px;
 }
-
+.menu_about{
+    display: flex;
+    justify-content: space-between;
+}
 .title__about{
     color:  #FFF;
     font-family: Open Sans;
@@ -306,3 +326,288 @@ a{
     display: flex;
     justify-content: flex-start;
 }
+
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .main-right{
+        width: 53.9%;
+        padding-bottom: 128px;
+    }
+    .main-left{
+        width: 78.6%;
+        padding-bottom: 197px;
+    }
+    .flex{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .product-logo{
+        width: 35%;
+    }
+    .main_menu{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo_menu{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+    }
+    .logos{
+        margin-bottom: 277px;
+    }
+    .menu_deep{
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .img__feature {
+        max-width: 100%; 
+        height: auto; 
+    }
+    .deep__learning-left{
+        width: 77%;
+        margin-right: 0;
+    }
+    .deep__learning-right{
+            width: 69%;
+    }
+    
+    .feature-left, .feature-right{
+        display: none;
+    }
+    .top__feature{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .one_feature, .tree_feature{
+        width: 51%;
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+    .menu_about{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about__left{
+        width: 71%;
+        padding-bottom: 64px;
+    }
+    .nav_footer{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .info{
+        width: 48%;
+    }
+    .about_store{
+        width: 45%;
+    }
+    .email{
+        width: 90%;
+    }
+    .about_footer{
+        width: 82%;
+    }
+    .footer{
+        margin-bottom: 48px;
+    }
+
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .top__feature{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .one_feature, .tree_feature{
+        width: 51%;
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+    .feature-left, .feature-right{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 375px) {
+    
+    .container{
+        max-width: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 64px;
+        
+    }
+    .nav{
+        flex-wrap: wrap;
+        width: 100%;  
+    }
+    .header-link{
+        font-size: 14px;
+        padding: 22.5px 8px;
+    }
+    .main{
+        margin-bottom: 0;
+    }
+    .subtitle{
+        font-size: 14px;
+        text-align: center;
+    }
+    .title{
+        text-align: center;
+        font-size: 28px;
+    }
+    .dsc{
+        text-align: center;
+        font-size: 18px;
+    }
+    .main_menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main_link_menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 24px;
+        align-items: center;
+    }
+    .main-left{
+        width: 90%;
+    }
+    .main-right{
+        display: flex;
+        width: 97%;
+        justify-content: space-between;
+    }
+    .image_main_right{
+        width: 99%;
+        flex-wrap: wrap;
+    }
+    .logo_menu{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+    }
+    .logo1{
+        width: 62%;
+    
+    }
+    .logo2{
+        width: 86%;
+    }
+    .logos {
+        margin-bottom: 204px;
+    }  
+    .deep__learning{
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+    
+
+    .deep__learning-right{
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .deep__learning-left{
+        width: 100%;
+    }
+    .deep__learning_image{
+        width: 95%;
+        flex-wrap: wrap;
+    }
+    .title__deep__learning {
+        width: 95%;
+        text-align: center;
+        font-size: 24px;
+    }
+    .dsc__deep__learning{
+        width: 95%;
+        text-align: center;
+        font-size: 16px;
+    }
+    .one_feature,.tree_feature{
+        width: 96%;
+    }
+    .about__left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 32px;
+    }
+    .title__about{
+        width: 80%;
+        text-align: center;
+        font-size: 24px;
+    }
+    .txt__about{
+        width: 95%;
+        text-align: center;
+        font-size: 16px;
+
+    }
+    .about__right{
+        width: 100%;
+    }
+    .image_about{
+        width: 92%;
+    }
+    .about {
+        margin-bottom: 209px;
+    }
+    .nav_footer{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info, .about_store, .email{
+        width: 95%;
+    }
+    .title__footer{
+        text-align: center;
+        font-size: 16px;
+    }
+    .email_footer{
+
+        font-size: 14px;
+
+    }
+    .site_footer{
+        text-align: center;
+    }
+    .site_footer{
+        align-items: center;
+    }
+    .icons{
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+        justify-content: center;
+    }
+}
+
