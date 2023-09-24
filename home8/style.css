@@ -10,6 +10,9 @@ body {
   img {
     max-width: 100%;
   }
+  a {
+    text-decoration: none;
+}
   
   .top {
     position: relative;
@@ -249,14 +252,54 @@ body {
   }
   
   .product_img {
-    width: 100%;
+    width: 100%;    
+  }
+  .product:hover .product_img {
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5);
   }
   .product_img:hover {
     border: 2px solid #F16D7F;
     /* background-color: black; */
     opacity: 0.5;
+
   }
-  
+  .product:hover .product_add {
+    display: flex;
+  }
+  .product_img_container {
+    position: relative;
+    overflow: hidden;
+}
+  .product_add {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    width: 139px;
+    height: 44px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    flex-direction: row;
+}
+
+/* .product_add svg {
+    margin-right: 11px;
+    vertical-align: middle;
+} */
+
+.product_add:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+
   .product_content {
     background: #F8F8F8;
     display: flex;
@@ -344,6 +387,7 @@ body {
     background-image: url('images/subscribe.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    justify-items: center;
 }
 .subscribe_item{
     position: relative;
