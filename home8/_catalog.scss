@@ -1,0 +1,192 @@
+.filter-sort {
+    padding-top: 39px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .filter {
+    width: 100%;
+      padding: 13px 16px 16px 0;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+  
+    &-box {
+      position: relative;
+      height: 40px;
+      width: 360px;
+    }
+  
+    &__content {
+      background: #fff;
+      padding: 0 16px 16px;
+    }
+  
+    &[open] {
+      background: #fff;
+      box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+      width: 100%;
+      padding: 13px 16px 16px 0;
+    }
+  
+    &[open] .filter__heading {
+      color: $textColorHighlight;
+    }
+  
+    &[open] path {
+      fill: $textColorHighlight;
+    }
+  
+    &__summary_sort {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+  
+    &__heading {
+      color: $textColor;
+      font-family: Lato;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  
+    &__item {
+      margin-top: 16px;
+    }
+  
+    &__link-box {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      padding: 24px 16px;
+    }
+  
+    &__link {
+      color: #6F6E6E;
+      font-family: Lato;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+  
+      &:hover {
+        color: $textColorHighlight;
+      }
+    }
+  
+    &__head {
+      color: #6F6E6E;
+      font-family: Lato;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding: 8px 11px 11px 11px;
+      border-bottom: 1px solid #EBEBEB;
+      border-left: 5px solid $textColorHighlight;
+    }
+  
+    &__item[open] .filter__head {
+      color: $textColorHighlight;
+    }
+  }
+  
+  .sort__catalog {
+    padding-top: 12px;
+    display: flex;
+    gap: 18px;
+  
+    &__details {
+      position: relative;
+    }
+  
+    &__summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    &__check {
+      display: flex;
+      gap: 9px;
+      align-items: center;
+    }
+  
+    &__check {
+      color: #6F6E6E;
+      font-family: Roboto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  
+    &__heading {
+      color: #6F6E6E;
+      font-family: Lato;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  
+    &__box {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      width: 79px;
+      padding: 7px 9px 11px;
+      background: #FFFFFF;
+      box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+      z-index: 1;
+      top: 22px;
+      left: -9px;
+    }
+  }
+  
+  .pages {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 96px;
+    &__item {
+      background: #FFFFFF;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      width: 284px;
+      border: 1px solid #EBEBEB;
+      border-radius: 3px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      &_left:hover path {
+        fill: $textColorHighlight;
+      }
+      &_center {
+        display: flex;
+        gap: 23px;
+        .number {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 19px;
+          color: #C4C4C4;
+        }
+        .number1 {
+          color: $textColorHighlight;
+        }
+      }
+  
+      &_right:hover path {
+        fill: $textColorHighlight;
+      }
+    }
+  }
+  .number:hover{
+    color: $textColorHighlight;
+  }

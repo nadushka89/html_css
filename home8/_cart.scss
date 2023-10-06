@@ -1,0 +1,157 @@
+.shopping{
+    display: flex;
+    gap: 128px;
+    padding-top: 96px;
+    &_cart{
+        display: flex;
+        margin-bottom: 40px;
+        box-shadow: 0px 0px 20px #F3EEEF;
+        
+    }
+    &_cart_description{
+        padding-left: 32px;
+
+    }
+    &_heading{
+        display: flex;
+        gap: 57px;
+        color: $textColor;
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 400;
+        padding-bottom: 42px;
+        padding-top: 22px;
+        padding-right: 22px;
+        
+    }
+    &_text{
+        color: #575757;
+        font-family: Lato;
+        font-size: 22px;
+        font-weight: 400;
+        padding-bottom: 6px;
+        
+    }
+    &_text_price{
+        color: $textColorHighlight;
+        font-family: Lato;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    &_quantity{
+        width: 44px;
+        height:  24.949px;
+        text-align: center;
+        border-color: #eaeaea;
+        color: #656565;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    &__buttoms{
+        display: flex;
+        gap: 192px;
+        padding-bottom: 128px;
+
+    }
+    &__buttom{
+        color: $textColor;
+        font-size: 14px;
+        font-weight: 300;
+        width: 235px;
+        height: 50px;
+        background-color: $neutral-color;
+        border-color: #a4a4a4;
+        
+    }
+    &__buttom:hover {
+        color: #fff;
+        background-color: $textColorHighlight;
+        border-color: $textColorHighlight;
+      }
+    &__adress{
+        padding-top: 17px;
+        padding-bottom: 20px;
+        color: #222;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    &__input{
+        width: 360px;
+        height: 45px;
+        margin-bottom: 20px;
+        color: #B1B1B1;
+        font-size: 13px;
+        font-weight: 300;
+        padding-left: 16.74px;
+    }
+    &__input:hover{
+        border-color: $textColorHighlight;;
+    }
+    &__total{
+        
+        width: 360px;
+        height: 214px;
+        flex-shrink: 0;
+        background-color: #f5f3f3;
+    }
+    &__totalsum{
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        padding: 39px 34px 12px 218px;
+    }
+    &__subtotal{
+        color: #4A4A4A;
+        font-size: 11px;
+        font-weight: 400;
+    }
+    &__grandsum{
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        padding: 0 37px 21px 153px;
+    }
+    &__grandtotal{
+        color: #222;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    &__line{
+        width: 275px;
+        padding-left: 43px;
+    }
+}
+.quantity{
+    display: flex;
+    gap: 22px;
+}
+.min{
+    width: 225px;
+}
+.get{
+    width: 101.408px;
+    height: 35px;
+    flex-shrink: 0;
+    font-size: 11px;
+    margin-bottom: 57px;
+}
+.pink{
+    color: $textColorHighlight;
+    font-size: 16px;
+    font-weight: 700;
+}
+.checkout{
+    width: 273px;
+    height: 50px;
+    flex-shrink: 0;
+    background-color: $textColorHighlight;
+    color: $neutral-color;
+    border: none;
+    margin: 17px 43px 42px 44px;
+    
+    &:hover{
+        background-color:$neutral-color;
+        color: $textColorHighlight;
+        border: $textColorHighlight;
+    }
+}
