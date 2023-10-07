@@ -1,0 +1,108 @@
+
+.registration{
+    display: flex;
+    padding-top: 64px;
+    gap: 128px;
+    &__left{
+        display: flex;
+        flex-direction: column;
+    }
+    &__label{
+        color: #222;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 20.5px;
+    }
+    &__input{
+        width: 358.986px;
+        height: 44px;
+        border: 1px solid #A4A4A4;
+        padding-left: 16.73px;
+        margin-bottom: 21px;
+    }
+    &__input:hover{
+        border: 1px solid $textColorHighlight;
+    }
+    &__form{
+        display: flex;
+        gap: 20px;
+    }
+    &__form_radio{
+        color: #000;
+        font-family: Lato;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        display: flex;
+        gap: 10px;
+        margin-bottom: 33px;  
+    }
+    
+    &__text--password{
+        color: #B1B1B1;
+        font-family: Lato;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 39px;
+    }
+    &__buttom{
+        width: 167px;
+        height: 50px;
+        background-color: $textColorHighlight;
+        color: #FFFFFF;
+        border: none;
+        margin-bottom: 96px;
+    }
+    &__buttom:hover{
+        background-color: #FFFFFF;
+        color: $textColorHighlight;
+        border: 1px solid $textColorHighlight;
+        &:hover path{
+            fill: $textColorHighlight;
+        }
+    }
+    &__title{
+        color: #000;
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 22px;
+    }
+    &__text{
+        color: #000;
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 21px;
+    }
+    &__marker{
+        margin: 0 0 8px 30px;
+        list-style-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='16' viewBox='0 0 20 16' fill='none'%3e%3cpath d='M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z' fill='black'/%3e%3c/svg%3e");
+
+    }
+    &__marker li{
+        color: #000;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        padding-bottom: 16px;
+        padding-left: 23.08px;
+    }
+
+}
+.lastname{
+    margin-bottom: 34.5px;
+}
+.password{
+    margin-bottom: 15px;
+}
+input[type='radio'] {
+    accent-color: $textColorHighlight;
+
+}

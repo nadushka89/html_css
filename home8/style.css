@@ -327,6 +327,113 @@
   border: #F16D7F;
 }
 
+.registration {
+  display: flex;
+  padding-top: 64px;
+  gap: 128px;
+}
+.registration__left {
+  display: flex;
+  flex-direction: column;
+}
+.registration__label {
+  color: #222;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 20.5px;
+}
+.registration__input {
+  width: 358.986px;
+  height: 44px;
+  border: 1px solid #A4A4A4;
+  padding-left: 16.73px;
+  margin-bottom: 21px;
+}
+.registration__input:hover {
+  border: 1px solid #F16D7F;
+}
+.registration__form {
+  display: flex;
+  gap: 20px;
+}
+.registration__form_radio {
+  color: #000;
+  font-family: Lato;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 33px;
+}
+.registration__text--password {
+  color: #B1B1B1;
+  font-family: Lato;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 39px;
+}
+.registration__buttom {
+  width: 167px;
+  height: 50px;
+  background-color: #F16D7F;
+  color: #FFFFFF;
+  border: none;
+  margin-bottom: 96px;
+}
+.registration__buttom:hover {
+  background-color: #FFFFFF;
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+}
+.registration__buttom:hover:hover path {
+  fill: #F16D7F;
+}
+.registration__title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 22px;
+}
+.registration__text {
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 21px;
+}
+.registration__marker {
+  margin: 0 0 8px 30px;
+  list-style-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='16' viewBox='0 0 20 16' fill='none'%3e%3cpath d='M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z' fill='black'/%3e%3c/svg%3e");
+}
+.registration__marker li {
+  color: #000;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 16px;
+  padding-left: 23.08px;
+}
+
+.lastname {
+  margin-bottom: 34.5px;
+}
+
+.password {
+  margin-bottom: 15px;
+}
+
+input[type=radio] {
+  accent-color: #F16D7F;
+}
+
 body {
   font-family: "Lato", sans-serif;
   max-width: 100%;
