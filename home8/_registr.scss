@@ -3,6 +3,7 @@
     display: flex;
     padding-top: 64px;
     gap: 128px;
+    padding-bottom: 96px;
     &__left{
         display: flex;
         flex-direction: column;
@@ -26,11 +27,11 @@
     &__input:hover{
         border: 1px solid $textColorHighlight;
     }
-    &__form{
+    &_genders{
         display: flex;
         gap: 20px;
     }
-    &__form_radio{
+    &_genders_radio{
         color: #000;
         font-family: Lato;
         font-size: 11px;
@@ -39,7 +40,7 @@
         line-height: normal;
         display: flex;
         gap: 10px;
-        margin-bottom: 33px;  
+        margin-bottom: 33px; 
     }
     
     &__text--password{
@@ -57,7 +58,6 @@
         background-color: $textColorHighlight;
         color: #FFFFFF;
         border: none;
-        margin-bottom: 96px;
     }
     &__buttom:hover{
         background-color: #FFFFFF;
@@ -103,6 +103,24 @@
     margin-bottom: 15px;
 }
 input[type='radio'] {
+    border-color:$textColorHighlight ;
     accent-color: $textColorHighlight;
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px)  {
+    .center {
+        padding-left: calc(50% - 384px);
+        padding-right: calc(50% - 384px);
+      }
+    .registration{
+        gap: 32px;
+        margin-left: 16px;
+        margin-right: 16px;
+        &__title, &__text, &__marker li{
+            font-size: 16px;
+        }
+      }
+
 
 }

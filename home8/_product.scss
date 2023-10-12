@@ -1,0 +1,206 @@
+.chapter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 59px;
+    padding-bottom: 60px;
+    align-items: center;
+    background-color: #F8F3F4;
+    &__ul{
+      list-style-type: none;
+      display: flex;
+      
+    }
+    &__li:not(:last-child)::after {
+      content: '/';
+      padding-left: 8px;
+      padding-right: 8px;
+      color: #636363;
+      font-size: 14px;
+      font-weight: 300;
+    }
+    &__menu {
+      color: #636363;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  
+    &__menu:hover {
+      color: $textColorHighlight;
+    }
+  
+    &__menu__left {
+      color: $textColorHighlight;
+      font-size: 24px;
+      font-weight: 400;
+    }
+  
+    &__menu__active {
+      color: $textColorHighlight;
+      font-weight: 700;
+    }
+  
+  }
+  .carousel {
+    height: 777px;
+    @include flex-center;
+    position: relative;
+    background-color: #F7F7F7;
+  
+    &-item {
+      background-color: rgba(42, 42, 42, 0.15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 47px;
+      height: 47px;
+      padding: 8px;
+  
+      &:hover path {
+        fill: $textColorHighlight;
+      }
+  
+      &__left {
+        left: 0;
+      }
+  
+      &__right {
+        right: 0;
+      }
+    }
+  }
+  .description__product {
+    background-color: #fff;
+    border: 1px solid #EAEAEA;
+    @include flex-center;
+    flex-direction: column;
+    // width: 70%;
+    margin: -65px auto 0;
+    position: relative;
+    margin-bottom: 129px;
+  
+    &__heading {
+      color: $textColorHighlight;
+      font-size: 14px;
+      font-weight: 300;
+      padding-top: 64.54px;
+      padding-bottom: 12.1px;
+    }
+  
+    &__line {
+      padding-bottom: 12.1px;
+  
+      &__big {
+        stroke-width: 1px;
+        stroke: #EAEAEA;
+        padding-bottom: 65.05px;
+      }
+    }
+  
+    &__head {
+      color: #4D4D4D;
+      font-family: Lato;
+      font-size: 18px;
+      font-weight: 300;
+      padding-bottom: 48.41px;
+    }
+  
+    &__text {
+      max-width: 48.6%;
+      color: #5E5E5E;
+      text-align: center;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: 300;
+      padding-bottom: 32.27px;
+    }
+  
+    &__price {
+      color: $textColorHighlight;
+      font-family: Lato;
+      font-size: 24px;
+      font-weight: 300;
+      padding-bottom: 65.04px;
+    }
+  
+    &__button {
+      width: 212px;
+      // width: 21%;
+      height: 48px;
+      margin-top: 48px;
+      margin-bottom: 60px;
+      /* margin-left: 425px; */
+      // margin-left: 40%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      border: 1px solid $textColorHighlight;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #F26376;
+      align-items: center;
+      gap: 22.99px;
+  
+      // padding-left:24px ;
+      // padding-right: 57px;
+      &:hover {
+        color: #fff;
+        background-color: $textColorHighlight;
+      }
+  
+      &:hover path {
+        fill: white;
+      }
+    }
+  
+  }
+  .sort {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+  
+    &__summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: $secondary-color;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: 400;
+      padding-bottom: 48.41px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px)  {
+    .center {
+        padding-left: calc(50% - 384px);
+        padding-right: calc(50% - 384px);
+      }
+    .chapter__right{
+        margin-right: 16px;
+    }
+    .carousel{
+        height: 624px;
+    }
+    .d-block{
+        max-width: 60.7%;
+    }
+    .description__product{
+        margin: 0 auto 0;
+    }
+    .product_3{
+        display: none;
+        visibility: hidden;
+    }
+    .product_page{
+        order:unset;
+    }
+    .product_1{
+      order: 2;
+    }
+    .product_2{
+      order: 1;
+    }
+}

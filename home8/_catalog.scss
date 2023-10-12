@@ -153,7 +153,7 @@
     margin-top: 48px;
     display: flex;
     justify-content: center;
-    padding-bottom: 96px;
+  
     &__item {
       background: #FFFFFF;
       padding-top: 12px;
@@ -190,3 +190,25 @@
   .number:hover{
     color: $textColorHighlight;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px)  {
+    .center {
+        padding-left: calc(50% - 384px);
+        padding-right: calc(50% - 384px);
+      }
+    .filter__summary_sort{
+      margin-left: 16px;
+      
+    }
+    .filter-sort{
+      justify-content: space-between;
+    }
+    .sort__catalog{
+      margin-right: 16px;
+      
+    }
+    .product_item3{
+        display: none;
+        visibility: hidden;
+    }
+    }
