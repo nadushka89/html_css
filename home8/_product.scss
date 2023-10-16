@@ -204,3 +204,44 @@
       order: 1;
     }
 }
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .carousel{
+    height: 624px;
+  }
+  .description__product{
+    margin-top: 0;
+    width: 100%;
+    border: 0;
+    &__text{
+      max-width: 87%;
+    }
+    &__price{
+      padding-bottom: 31.91px;
+    }
+    &__line__svg{
+      width:  47%;
+    }
+    &__line__big{
+      padding-bottom: 49.6px;
+    }
+    &__button{
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  
+  }
+  .product_box.product_box__product{
+    padding-bottom: 0;
+  }
+  .sort__summary{
+    font-size: 10px;
+    padding-bottom: 64.09px;
+  }
+  .product_box_content.product_page {
+    gap: 0;
+  }
+  .product_2{
+    visibility: hidden;
+    display: none;
+  }
+}

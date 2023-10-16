@@ -124,3 +124,20 @@ input[type='radio'] {
 
 
 }
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .registration{
+        flex-direction: column;
+        padding-top: 0;
+        gap: 40px;
+        &__title{
+            font-size: 16px;
+        }
+        &__text{
+            font-size: 16px;
+        }
+        &__marker li{
+            font-size: 16px;
+        }
+    }
+}
+
