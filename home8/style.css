@@ -878,6 +878,7 @@ a {
 
 .top {
   position: relative;
+  overflow: hidden;
 }
 
 .center {
@@ -926,10 +927,10 @@ a {
 .mobile_menu {
   position: absolute;
   top: -250px;
-  z-index: 1;
+  z-index: 2;
   transition: top 0.3s;
   width: 200px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   padding: 32px;
   box-sizing: border-box;
@@ -978,7 +979,7 @@ a {
 
 .start {
   display: flex;
-  background: #F1E4E6;
+  background: #f1e4e6;
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
 }
@@ -1077,7 +1078,7 @@ a {
   line-height: 17px;
   text-align: center;
   margin-top: 6px;
-  color: #9F9F9F;
+  color: #9f9f9f;
 }
 .product_box_content {
   margin-top: 48px;
@@ -1150,7 +1151,7 @@ a {
   box-shadow: 0 0 5px #fff;
 }
 .product_content {
-  background: #F8F8F8;
+  background: #f8f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1171,7 +1172,7 @@ a {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-  color: #5D5D5D;
+  color: #5d5d5d;
 }
 .product_price {
   font-style: normal;
@@ -1230,14 +1231,14 @@ a {
 }
 
 .tittle_item {
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-family: Lato;
   font-size: 19.96px;
   font-weight: 400;
 }
 
 .text_item {
-  color: #FBFBFB;
+  color: #fbfbfb;
   text-align: center;
   font-family: Lato;
   font-size: 13.972px;
@@ -1295,8 +1296,8 @@ a {
   font-weight: 400;
   padding-left: 22px;
   text-align: left;
-  background-color: #E1E1E1;
-  border-color: #E1E1E1;
+  background-color: #e1e1e1;
+  border-color: #e1e1e1;
   border-radius: 32px 0 0 32px;
   border: none;
 }
@@ -1304,7 +1305,7 @@ a {
 .button_subscribe {
   width: 100px;
   height: 49px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 14px;
   background-color: #F16D7F;
@@ -1322,7 +1323,7 @@ a {
 .copyright_text {
   margin-top: 30px;
   margin-bottom: 30px;
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-family: Lato;
   font-size: 16px;
   font-weight: 400;
@@ -1481,6 +1482,7 @@ a {
   }
   .mobile_menu {
     width: 100%;
+    z-index: 2;
   }
   .chapter {
     flex-direction: column;
@@ -1635,14 +1637,14 @@ a {
     font-size: 14px;
     padding-left: 22px;
     text-align: left;
-    background-color: #E1E1E1;
-    border-color: #E1E1E1;
+    background-color: #e1e1e1;
+    border-color: #e1e1e1;
     border-radius: 32px 0 0 32px;
   }
   .button_subscribe {
     width: 100px;
     height: 49px;
-    color: #FFF;
+    color: #fff;
     text-align: center;
     font-size: 14px;
     background-color: #F16D7F;
